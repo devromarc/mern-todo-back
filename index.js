@@ -9,14 +9,7 @@ const app = express();
 app.use(express.json());
 
 // cors bypass
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://mern-todo-app-02n0.onrender.com/",
-    ],
-  })
-);
+app.use(cors());
 
 const PORT = process.env.PORT || 5500;
 
